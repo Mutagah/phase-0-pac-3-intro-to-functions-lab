@@ -1,9 +1,9 @@
+//referencing different libraries that help us run our test
 global.expect = require('expect');
 
 const babel = require('babel-core');
 const jsdom = require('jsdom');
 const path = require('path');
-
 before(function(done) {
   const babelResult = babel.transformFileSync(
     path.resolve(__dirname, '..', 'index.js'), {
